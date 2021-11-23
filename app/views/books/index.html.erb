@@ -8,3 +8,9 @@
     <% end %>
   <% end %>
 </ul>
+
+
+<p> Find book by title: </p>
+<% ("A".."Z").each do |letter| %>
+  <%= link_to letter, alpha_books_path(alpha: letter ) %>
+<% end %>

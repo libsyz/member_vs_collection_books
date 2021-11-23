@@ -1,0 +1,10 @@
+
+<h1> Book tites starting with letter <%= params[:alpha] %> </h1>
+
+<ul>
+  <% @books.each do |book| %>
+    <%= link_to book_path(book) do %>
+      <li> <%= book.title %> </li>
+    <% end %>
+  <% end %>
+</ul>
