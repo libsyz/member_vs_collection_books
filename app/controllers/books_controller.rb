@@ -10,4 +10,8 @@ class BooksController < ApplicationController
   def show
     @book = Book.find(params[:id])
   end
+
+  def author
+    @author = Book.find(params[:id]).author
+  end
 end

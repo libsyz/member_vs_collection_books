@@ -2,3 +2,5 @@
 <h4> <%= @book.title %> </h4>
 <p class="text-muted"> By <%= @book.author %> </p class="text-muted">
 <%= "This book was written by #{@book.author}" %>
+
+<p> Learn more about <%= link_to "the author", author_book_path(@book) %> </p>
